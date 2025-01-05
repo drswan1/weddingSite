@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia & Julia</title>
+</head>
+<body>
+    <div id="titleContainer">
+        <div id="title">We are getting married!<div>
+            <div class="language-selector">
+                <button onclick="changeLanguage('en')" id="en-btn">en</button>
+                <button onclick="changeLanguage('es')" id="es-btn">sp</button>
+                <button onclick="changeLanguage('fr')" id="fr-btn">de</button>
+            </div>
+    </div>
+
+    <div id="mainContainer">
+        <div id="main">
+            <div id="invite">You're invited"</div>
+            <div id="details">
+                <div id="dateContainer">
+                    <div id="date">Saturday, August 9th, 2025</div>
+                    <div id="time">1:00PM</div>
+                </div>
+                <div id="location">Mirabell Palace, 5020 Salzburg, Austria</div>
+            </div>
+        </div>
+        <div id="arrow"></div>
+    </div>
+
+    <div id="hiddenContainer">
+        <div id="flexContainer">
+            <button id="qeuestions">RSVP</button>
+            <button id="schedule">Itinerary</button>
+            <button id="wishes">Wishes</button>
+        </div>
+    </div>
+    <script type="module" src="langScript.js"></script>
+
+</body>
+</html>
