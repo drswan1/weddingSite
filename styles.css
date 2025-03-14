@@ -11,7 +11,7 @@ body {
     grid-template-columns: repeat(5,1fr);
     border: solid 1px black;
     justify-items: center;
-    height: 50vh;
+    height: 45vh;
 }
 
 
@@ -60,7 +60,7 @@ body {
     flex-direction: column;
     justify-content: space-between;  /* Changed from center to space-between */
     align-items: center;
-    height: 50vh;
+    height: 45vh;
 }
 
 #main{
@@ -98,23 +98,13 @@ body {
     padding-left: .5rem;
 }
 
-#arrow{
-
-    height:2.5rem;
-    width: 2.5rem;
-    border-bottom: grey solid 2px;
-    border-right: grey solid 2px;
-    transform: rotate(45deg);
-    margin-bottom: 1rem;
-}
-
 #hiddenContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     border: red solid 1px;
     scroll-snap-align: end;
-    height: 50vh;
+    height: 10vh;
 
 
     button {
