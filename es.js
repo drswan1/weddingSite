@@ -4,7 +4,7 @@ export const es = {
     date: "Sábado, 9 de agosto de 2025",
     time: "1:00 PM",
     location: "Mirabellplatz 4, 5020 Salzburgo, Austria",
-    questions: "Sección de preguntas",
+    questions: "¿Preguntas?",
     schedule: "Horario",
     wishes: "Deseos"
 };

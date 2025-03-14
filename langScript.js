@@ -9,7 +9,7 @@ const languages = { en, es, de };
 // Function to change language
 function changeLanguage(lang) {
     // Update content
-    document.getElementsByClassName('title').textContent = languages[lang].title;
+    document.getElementById('title').textContent = languages[lang].title;
     document.getElementById('invite').textContent = languages[lang].invite;
     document.getElementById('date').textContent = languages[lang].date;
     document.getElementById('time').textContent = languages[lang].time;

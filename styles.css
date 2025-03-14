@@ -1,14 +1,23 @@
-.titleContainer{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    border:solid 1px black;
-    justify-items: center;
-    align-self: center;
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 
+    scroll-snap-type: y proximity;
 }
 
-.title{
-    border: green solid 1px;
+.titleContainer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: solid 1px black;
+    justify-items: center;
+    height: 50vh;
+}
+
+
+#title{
+
+    padding-top:10%;
     grid-row: 1/1;
     grid-column: 3/3;
     text-align: center;
@@ -16,17 +25,42 @@
 }
 
 .language-selector{
+    padding-top:10%;
     border: red solid 1px;
     justify-items: center;
     grid-row: 1/1;
     grid-column: 5/5;
+
+    button {
+        background-color: beige;
+        border-radius: 3px;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .25rem;
+        margin-left: .25rem;
+        cursor: pointer;
+        border: 2px solid grey;
+        color: black;
+        font-weight: bolder;
+        box-shadow: 4px 4px 0 0 #f3f3f4;
+        text-align: center;
+
+        transition: transform 200ms;
+      }
+      
+      button:hover {
+        box-shadow: 3px 3px white,
+        6px 6px 0 0 #d4d4d4;
+        transform:  translate(-2px, -2px);
+      }
 }
 
 #mainContainer{
     display: flex;
-    border: blue solid 1px;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;  /* Changed from center to space-between */
     align-items: center;
+    height: 50vh;
 }
 
 #main{
@@ -64,4 +98,48 @@
     padding-left: .5rem;
 }
 
- 
+#arrow{
+
+    height:2.5rem;
+    width: 2.5rem;
+    border-bottom: grey solid 2px;
+    border-right: grey solid 2px;
+    transform: rotate(45deg);
+    margin-bottom: 1rem;
+}
+
+#hiddenContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red solid 1px;
+    scroll-snap-align: end;
+    height: 50vh;
+
+
+    button {
+        background-color: beige;
+        border-radius: 3px;
+        width: 10rem;
+        height: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        border: 2px solid grey;
+        color: black;
+        font-weight: bolder;
+        box-shadow: 4px 4px 0 0 #f3f3f4;
+        text-align: center;
+
+        transition: transform 200ms;
+      }
+      
+      button:hover {
+        box-shadow: 3px 3px white,
+        6px 6px 0 0 #d4d4d4;
+        transform:  translate(-2px, -2px);
+      }
+}
+
+
+
