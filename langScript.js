@@ -7,7 +7,7 @@ import { de } from './de.js';
 const languages = { en, es, de };
 
 // Function to change language
-window.changeLanguage = function(lang) {
+function changeLanguage(lang) {
     // Update content
     document.getElementById('title').textContent = languages[lang].title;
     document.getElementById('invite').textContent = languages[lang].invite;
@@ -19,12 +19,19 @@ window.changeLanguage = function(lang) {
     document.getElementById('wishes').textContent = languages[lang].wishes;
 
     // Update button styles
-    document.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.language-selector button').forEach(btn => {
+        btn.classList.remove('active');
+    });
     document.getElementById(`${lang}-btn`).classList.add('active');
 
     // Update HTML lang attribute
     document.documentElement.lang = lang;
 }
 
-// Set initial language
-changeLanguage('en');
+// Expose function to global scope
+window.changeLanguage = changeLanguage;
+
+// Set initial language when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    changeLanguage('en');
+});

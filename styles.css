@@ -1,0 +1,22 @@
+.titleContainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border:solid 1px black;
+    justify-items: center;
+    align-self: center;
+
+}
+.title{
+    border: green solid 1px;
+    grid-row: 1/1;
+    grid-column: 3/3;
+    text-align: center;
+    width: max-content;
+}
+
+.language-selector{
+    border: red solid 1px;
+    justify-items: center;
+    grid-row: 1/1;
+    grid-column: 5/5;
+}
