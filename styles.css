@@ -6,6 +6,7 @@
     align-self: center;
 
 }
+
 .title{
     border: green solid 1px;
     grid-row: 1/1;
@@ -20,3 +21,47 @@
     grid-row: 1/1;
     grid-column: 5/5;
 }
+
+#mainContainer{
+    display: flex;
+    border: blue solid 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    border: purple solid 1px;
+    align-items: center;
+    width: 80%;
+}
+#invite{
+    border: yellow solid 1px;;
+}
+
+#details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: orange solid 1px;
+    width: 100%;
+}
+
+#dateContainer{
+    display: flex;
+    flex-direction: row;
+    border: pink solid 1px;
+    width: 50%;
+    justify-content: flex-end;
+    padding-right: .5rem;
+}
+
+#location{
+    width: 50%;
+    border: pink solid 1px;
+    justify-content: flex-start;
+    padding-left: .5rem;
+}
+
+ 
